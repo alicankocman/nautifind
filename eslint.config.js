@@ -8,6 +8,7 @@ export default defineConfig([
   globalIgnores(['dist', 'coverage', 'create_storage_buckets.js']),
   {
     files: ['**/*.{js,jsx}'],
+    ignores: ['create_storage_buckets.js'],
     extends: [
       js.configs.recommended,
       reactHooks.configs.flat.recommended,
