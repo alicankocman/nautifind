@@ -54,10 +54,10 @@ export default function HowToRent() {
               </svg>
             </div>
             <h4 className="pb-3 pt-8 text-lg font-bold leading-[34px] text-gray-dark lg:text-xl xl:pt-6 4xl:pt-9">
-              Find perfect boat
+              Mükemmel Tekneyi Bulun
             </h4>
             <p className="text-sm font-normal capitalize leading-[22px] text-gray-light xl:leading-6 4xl:text-base 4xl:leading-7">
-              Browse over 100 of our boats online at our website.
+              Web sitemizde 100'den fazla teknemizi inceleyin ve size en uygun olanı seçin.
             </p>
           </div>
           <div className="group/item card-gradient flex flex-col justify-start rounded-xl border-2 p-6 transition-all duration-500 lg:p-7 4xl:p-12">
@@ -91,11 +91,10 @@ export default function HowToRent() {
               </svg>
             </div>
             <h4 className="pb-3 pt-8 text-lg font-bold leading-[34px] text-gray-dark lg:text-xl xl:pt-6 4xl:pt-9">
-              Select a captain
+              Kaptan Seçin
             </h4>
             <p className="text-sm font-normal capitalize leading-[22px] text-gray-light xl:leading-6 4xl:text-base 4xl:leading-7">
-              Find your perfect look among thousands of fashion pieces, here
-              available for rent and purchase
+              Deneyimli kaptanlarımız arasından size en uygun olanı seçin ve güvenli bir yolculuk yapın.
             </p>
           </div>
           <div className="group/item card-gradient flex flex-col justify-start rounded-xl border-2 p-6 transition-all duration-500 lg:p-7 4xl:p-12">
@@ -122,11 +121,10 @@ export default function HowToRent() {
               </svg>
             </div>
             <h4 className="pb-3 pt-8 text-lg font-bold leading-[34px] text-gray-dark lg:text-xl xl:pt-6 4xl:pt-9">
-              Many Pickup Locations
+              Birçok Kalkış Noktası
             </h4>
             <p className="text-sm font-normal capitalize leading-[22px] text-gray-light xl:leading-6 4xl:text-base 4xl:leading-7">
-              Enjoy wearing it at your special event for a few days, or purchase
-              it to make it part of your wardrobe
+              İstanbul'un birçok noktasından kalkış yapabilir, size en yakın lokasyonu seçebilirsiniz.
             </p>
           </div>
           <div className="group/item card-gradient flex flex-col justify-start rounded-xl border-2 p-6 transition-all duration-500 lg:p-7 4xl:p-12">
@@ -146,11 +144,10 @@ export default function HowToRent() {
               </svg>
             </div>
             <h4 className="pb-3 pt-8 text-lg font-bold leading-[34px] text-gray-dark lg:text-xl xl:pt-6 4xl:pt-9">
-              Satisfied Customers
+              Memnun Müşteriler
             </h4>
             <p className="text-sm font-normal capitalize leading-[22px] text-gray-light xl:leading-6 4xl:text-base 4xl:leading-7">
-              Simply pop your dress back in the free prepaid satchel provided.
-              We now handle all the dry cleaning.
+              Binlerce memnun müşterimiz ile güvenilir hizmet sunuyor, unutulmaz deneyimler yaşatıyoruz.
             </p>
           </div>
           {/* Bilgilendirici içerikler buraya eklenecek */}

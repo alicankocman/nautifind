@@ -67,7 +67,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative isolate flex min-h-[80vh] items-center justify-center overflow-hidden px-4 pb-28 pt-24 sm:justify-start sm:pb-44 sm:pt-32 sm:pl-10 lg:pb-52 lg:pt-40 lg:pl-16 xl:pl-24 2xl:pl-32">
+    <section className="relative isolate flex min-h-[70vh] items-center justify-center overflow-hidden px-4 pb-20 pt-20 sm:min-h-[80vh] sm:justify-start sm:pb-44 sm:pt-32 sm:pl-10 lg:pb-52 lg:pt-40 lg:pl-16 xl:pl-24 2xl:pl-32">
       <OptimizedImage
         src={heroBg}
         alt="Home banner 1"
@@ -76,29 +76,29 @@ export default function HeroSection() {
         className="absolute inset-0 h-full w-full bg-gray-lighter object-cover"
         loading="eager"
       />
-      <form className="relative z-50 w-full max-w-[520px] rounded-xl bg-white/95 p-8 shadow-2xl backdrop-blur-sm sm:max-w-[440px] lg:max-w-[560px]">
-        <div className="mb-6">
-          <span className="mb-2 hidden font-satisfy text-xl leading-7 text-sky-600 sm:block 4xl:text-[28px] 4xl:leading-[44px]">
+      <form className="relative z-50 w-full max-w-[520px] rounded-xl bg-white/95 p-5 shadow-2xl backdrop-blur-sm sm:max-w-[440px] sm:p-6 lg:max-w-[560px]">
+        <div className="mb-4">
+          <span className="mb-1.5 block font-satisfy text-base leading-6 text-sky-600 sm:text-lg md:text-xl lg:leading-7">
             Denizin Keyfini Çıkarın
           </span>
-          <h1 className="mb-3 text-[30px] font-extrabold uppercase leading-9 bg-gradient-to-r from-sky-600 to-cyan-500 bg-clip-text text-transparent sm:text-[36px] sm:leading-11 lg:text-[42px] lg:leading-[50px]">
+          <h1 className="mb-2 text-2xl font-extrabold uppercase leading-8 bg-gradient-to-r from-sky-600 to-cyan-500 bg-clip-text text-transparent sm:text-3xl sm:leading-10 md:text-[36px] md:leading-11 lg:text-[42px] lg:leading-[50px]">
             İstanbul Boğazı'nda
             <br className="hidden sm:block" />
             Unutulmaz Yolculuklar
           </h1>
-          <p className="hidden text-sm leading-6 text-gray-700 sm:block md:text-base">
+          <p className="text-xs leading-5 text-gray-700 sm:text-sm sm:leading-6 md:text-base">
             NautiFind ile İstanbul'un en güzel koylarını keşfedin. Boğaz turu, adalar gezisi ve lüks tekne kiralama hizmetleri.
           </p>
         </div>
 
-        <div className="space-y-4">
-          <div className="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-3 shadow-sm">
+        <div className="space-y-3">
+          <div className="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-2.5 shadow-sm">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              className="h-5 w-5 text-gray-500"
+              className="h-4 w-4 text-gray-500 sm:h-5 sm:w-5"
             >
               <path
                 strokeLinecap="round"
@@ -117,11 +117,11 @@ export default function HeroSection() {
             <div className=" w-full">
               <Listbox value={selectedLocation} onChange={setSelectedLocation}>
                 <div className="relative mt-1">
-                  <Listbox.Button className="flex w-full items-center justify-between rounded-lg bg-transparent text-left text-base font-semibold text-gray-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-900/50">
+                  <Listbox.Button className="flex w-full items-center justify-between rounded-lg bg-transparent text-left text-sm font-semibold text-gray-900 sm:text-base focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-900/50">
                     <span className="block truncate">
                       {selectedLocation
                         ? selectedLocation.name
-                        : "Search destinations"}
+                        : "Rota seçin"}
                     </span>
                   </Listbox.Button>
 
@@ -197,13 +197,13 @@ export default function HeroSection() {
           <Popover className="relative">
             {() => (
               <>
-                <Popover.Button className="flex w-full items-center gap-3 rounded-xl border border-gray-200 px-4 py-3 shadow-sm">
+                <Popover.Button className="flex w-full items-center gap-3 rounded-xl border border-gray-200 px-4 py-2.5 shadow-sm">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    className="h-5 w-5 text-gray-500"
+                    className="h-4 w-4 text-gray-500 sm:h-5 sm:w-5"
                   >
                     <rect
                       x="3.5"
@@ -220,10 +220,10 @@ export default function HeroSection() {
                     />
                   </svg>
                   <div className="flex w-full">
-                    <span className="text-base font-semibold text-gray-900">
+                    <span className="text-sm font-semibold text-gray-900 sm:text-base">
                       {departureDate
-                        ? format(departureDate, "EEE dd / MM / yy")
-                        : "Select departure date"}
+                        ? format(departureDate, "dd / MM / yyyy")
+                        : "Kalkış tarihi seçin"}
                     </span>
                   </div>
                 </Popover.Button>
@@ -252,9 +252,9 @@ export default function HeroSection() {
           </Popover>
 
           {/* NUMBER OF PEOPLE */}
-          <div className="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-3 shadow-sm">
-            <span className="text-base font-semibold text-gray-900">
-              Number Of People
+          <div className="flex items-center gap-3 rounded-xl border border-gray-200 px-4 py-2.5 shadow-sm">
+            <span className="text-sm font-semibold text-gray-900 sm:text-base">
+              Kişi Sayısı
             </span>
             <div className="ml-auto flex items-center gap-2">
               <button
@@ -262,7 +262,7 @@ export default function HeroSection() {
                 onClick={() =>
                   setNumberOfPeople((prev) => Math.max(0, prev - 1))
                 }
-                className="flex h-9 w-9 items-center justify-center rounded-lg border border-black text-black transition hover:bg-gray-50 hover:border-black"
+                className="flex h-8 w-8 items-center justify-center rounded-lg border border-black text-black transition hover:bg-gray-50 hover:border-black sm:h-9 sm:w-9"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -270,7 +270,7 @@ export default function HeroSection() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  className="h-4 w-4"
+                  className="h-3.5 w-3.5 sm:h-4 sm:w-4"
                 >
                   <path
                     strokeLinecap="round"
@@ -279,13 +279,13 @@ export default function HeroSection() {
                   />
                 </svg>
               </button>
-              <span className="min-w-8 text-center text-base font-semibold text-black">
+              <span className="min-w-8 text-center text-sm font-semibold text-black sm:text-base">
                 {String(numberOfPeople).padStart(2, "0")}
               </span>
               <button
                 type="button"
                 onClick={() => setNumberOfPeople((prev) => prev + 1)}
-                className="flex h-9 w-9 items-center justify-center rounded-lg border border-black text-black transition hover:bg-gray-50 hover:border-black"
+                className="flex h-8 w-8 items-center justify-center rounded-lg border border-black text-black transition hover:bg-gray-50 hover:border-black sm:h-9 sm:w-9"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -293,7 +293,7 @@ export default function HeroSection() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  className="h-4 w-4"
+                  className="h-3.5 w-3.5 sm:h-4 sm:w-4"
                 >
                   <path
                     strokeLinecap="round"
@@ -308,7 +308,7 @@ export default function HeroSection() {
 
         <button
           type="button"
-          className="mt-6 w-full rounded-xl bg-gradient-to-r from-sky-600 to-cyan-500 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-lg shadow-sky-500/50 transition-all hover:from-sky-700 hover:to-cyan-600 hover:shadow-xl hover:shadow-sky-500/60 hover:scale-[1.02]"
+          className="mt-4 w-full rounded-xl bg-gradient-to-r from-sky-600 to-cyan-500 px-6 py-2.5 text-xs font-semibold uppercase tracking-wide text-white shadow-lg shadow-sky-500/50 transition-all hover:from-sky-700 hover:to-cyan-600 hover:shadow-xl hover:shadow-sky-500/60 hover:scale-[1.02] sm:py-3 sm:text-sm"
           onClick={() => handleSubmit()}
         >
           Tekneleri Keşfet
