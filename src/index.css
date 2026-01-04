@@ -1,0 +1,37 @@
+@import "tailwindcss";
+:root {
+  --swiper-theme-color: #0284C7 !important; /* Deniz mavisi */
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+  --swiper-pagination-bullet-inactive-color: #0284C7;
+  /* NautiFind Denizcilik Teması */
+  --nautifind-primary: #0284C7; /* Sky-600 - Deniz mavisi */
+  --nautifind-primary-dark: #0369A1; /* Sky-700 */
+  --nautifind-primary-light: #0EA5E9; /* Sky-500 */
+  --nautifind-accent: #06B6D4; /* Cyan-500 - Turkuaz */
+}
+
+body{
+  background: #F0F9FF; /* Sky-50 - Açık deniz mavisi tonu */
+}
+
+.custom{
+  background: #F0F9FF;
+}
+
+.price{
+  background: #E0F2FE; /* Sky-100 */
+}
+
+/* Progress bar animation */
+@keyframes progress {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-progress {
+  animation: progress 2s ease-in-out infinite;
+}
