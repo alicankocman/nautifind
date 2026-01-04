@@ -256,7 +256,7 @@ export async function updateProduct(id, productData) {
 
     supabaseData.updated_at = new Date().toISOString();
 
-    const { data, error, count } = await supabase
+    const { data, error } = await supabase
       .from("boats")
       .update(supabaseData)
       .eq("id", id)
