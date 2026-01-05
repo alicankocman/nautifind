@@ -1,8 +1,8 @@
-# TripFinder Boat App - Proje Değerlendirmesi ve İyileştirme Planı
+# Nautifind Boat App - Proje Değerlendirmesi ve İyileştirme Planı
 
 ## 📋 Genel Bakış
 
-**Proje Adı:** TripFinder Boat App  
+**Proje Adı:** Nautifind Boat App  
 **Teknoloji Stack:** React 19, Vite, TailwindCSS, Supabase, React Router v7, React Query  
 **Durum:** Geliştirme aşamasında (Development)
 
